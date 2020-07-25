@@ -6,7 +6,7 @@
   // line-height: $line-height-logo;
   // letter-spacing: $primary-letter-spacing;
 
-  @include font-param(700, 22px, 1.18);
+  @include font-param(700, 26px, 1.19);
 
   color: $primary-black-color;
 }
@@ -19,7 +19,7 @@
   // line-height: $line-height-logo;
   // letter-spacing: $primary-letter-spacing;
 
-  @include font-param(700, 22px, 1.18);
+  @include font-param(700, 26px, 1.19);
 
   color: $accent-color;
 }

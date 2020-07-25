@@ -35,10 +35,11 @@
 .clients-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  width: calc((100% - 60px) / 2);
 
-  @media screen and (min-width: $mobile) {
-    width: calc((100% - 60px) / 2);
-  }
+  // @media screen and (min-width: $mobile) {
+  //   width: calc((100% - 60px) / 2);
+  // }
 
   @media screen and (min-width: $tablet) {
     width: calc((100% - 90px) / 3);

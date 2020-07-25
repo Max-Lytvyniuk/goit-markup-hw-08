@@ -10,23 +10,60 @@ footer {
 }
 
 .footer {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  // @media screen and (min-width: $tablet) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  //   text-align: center;
+  // }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.tablet-container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-flex {
-  display: flex;
-  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+  // display: flex;
+  // flex-direction: column;
 
-  width: 231px;
-  margin-right: 69px;
+  // width: 231px;
+  // margin-right: 69px;
+}
+
+.logo-footer {
+  margin-bottom: 20px;
 }
 
 .logo-white {
   margin-top: 0;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 
   font-family: $font-family-logo;
 
@@ -35,29 +72,17 @@ footer {
   // line-height: $line-height-logo;
   // letter-spacing: $primary-letter-spacing;
 
-  @include font-param(700, 22px, 1.18);
+  @include font-param(700, 26px, 1.19);
 
   color: $primary-white-color;
 }
 
-.invite-flex {
-  display: flex;
-  flex-direction: column;
-  margin-right: 94px;
+.footer-address {
+  margin-bottom: 60px;
 
-  width: 206px;
-}
-
-.invite-list {
-  display: flex;
-}
-
-.invite-list .invite-item {
-  margin-right: 10px;
-}
-
-.invite-list .invite-item:last-child {
-  margin-right: 0;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .address-str {
@@ -90,9 +115,47 @@ footer {
   color: $text-address-color-footer;
 }
 
+.logo-add {
+  @media screen and (min-width: $tablet) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 69px;
+    // display: flex;
+    // flex-direction: column;
+  }
+}
+
+.invite-flex {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 94px;
+    margin-bottom: 0;
+  }
+
+  //  width: 206px;
+}
+
+.invite-list {
+  display: flex;
+}
+
+.invite-list .invite-item {
+  margin-right: 10px;
+}
+
+.invite-list .invite-item:last-child {
+  margin-right: 0;
+}
+
 .invite {
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   // font-weight: 700;
   // font-size: 14px;
@@ -132,8 +195,14 @@ footer {
   height: 20px;
 }
 
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .subscribe {
   margin-top: 0;
+  margin-bottom: 20px;
 
   // font-weight: 700;
   // font-size: 14px;
@@ -148,9 +217,19 @@ footer {
 }
 
 .subscribe-flex {
-  display: flex;
-  align-items: center;
-  margin-top: 21px;
+  // @media screen and (max-width: 1199px) {
+  //   width: 450px;
+  // }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+  // display: flex;
+
+  // align-items: center;
+
+  // margin-top: 21px;
 }
 
 .subscribe-field {
@@ -159,6 +238,12 @@ footer {
 
   margin-top: 0;
   margin-right: 12px;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .form-subscribe {
@@ -177,26 +262,12 @@ footer {
   @extend %primary-button;
   display: flex;
   padding: 10px 29px;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
-// display: flex;
-//   align-items: center;
-//   text-align: center;
-
-//   min-width: 130px;
-//   padding: 10px 29px;
-
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 1.87;
-//   letter-spacing: 0.06em;
-
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   border-radius: 4px;
-//   border: 1px solid transparent;
-
-//   color: $primary-white-color;
-//   background-color: $accent-color;
 
 .subscribe-text {
   margin-right: 10px;
