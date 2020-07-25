@@ -1,4 +1,10 @@
 .example {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.example {
   margin-bottom: 94px;
 }
 

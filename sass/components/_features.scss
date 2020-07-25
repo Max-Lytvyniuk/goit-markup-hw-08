@@ -1,6 +1,19 @@
 .features {
   margin-top: 0;
-  margin-bottom: 94px;
+  // margin-bottom: 94px;
+  margin-bottom: 60px;
+
+  // @media screen and (min-width: $mobile) {
+  //   margin-bottom: 60px;
+  // }
+
+  // @media screen and (min-width: $tablet) {
+  //   margin-bottom: 60px;
+  // }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 94px;
+  }
 }
 
 .features-tittle-main {
@@ -10,13 +23,24 @@
 }
 
 .features-list {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features-item {
-  width: calc((100% - 90px) / 4);
   margin-right: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
+  }
 }
 
 .features-item:nth-child(4n) {
