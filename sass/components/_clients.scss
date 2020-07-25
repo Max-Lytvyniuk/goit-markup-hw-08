@@ -1,11 +1,19 @@
 .clients {
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 94px;
+  }
 }
 
 .clients-tittle {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 
   // font-weight: 700;
   // font-size: 36px;
@@ -25,8 +33,20 @@
 }
 
 .clients-item {
-  width: calc((100% - 150px) / 6);
   margin-right: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $mobile) {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 90px) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients-item:nth-child(6n) {
