@@ -1,0 +1,6 @@
+@mixin font-param($weight: 500, $size: 14px, $height: 1.71, $spacing: 0.03em) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}

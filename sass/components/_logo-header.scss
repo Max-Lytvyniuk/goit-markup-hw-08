@@ -1,0 +1,25 @@
+.logo {
+  font-family: $font-family-logo;
+
+  // font-weight: $font-weight-logo;
+  // font-size: $font-size-logo;
+  // line-height: $line-height-logo;
+  // letter-spacing: $primary-letter-spacing;
+
+  @include font-param(700, 22px, 1.18);
+
+  color: $primary-black-color;
+}
+
+.logo-blue {
+  font-family: $font-family-logo;
+
+  // font-weight: $font-weight-logo;
+  // font-size: $font-size-logo;
+  // line-height: $line-height-logo;
+  // letter-spacing: $primary-letter-spacing;
+
+  @include font-param(700, 22px, 1.18);
+
+  color: $accent-color;
+}
