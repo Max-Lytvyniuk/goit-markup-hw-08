@@ -448,12 +448,12 @@ body {
 }
 
 .features-item {
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .features-item {
+    margin-right: 30px;
     width: calc((100% - 60px) / 2);
   }
 }
@@ -461,6 +461,18 @@ body {
 @media screen and (min-width: 1200px) {
   .features-item {
     width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-item:nth-child(3n) {
     margin-bottom: 0;
   }
 }
