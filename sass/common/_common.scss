@@ -13,6 +13,8 @@ a {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -33,6 +35,18 @@ img {
 
   @media screen and (min-width: $desktop) {
     width: $desktop;
+  }
+}
+
+.tumb {
+  width: 450px;
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
   }
 }
 
