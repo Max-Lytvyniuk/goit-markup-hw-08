@@ -26,10 +26,10 @@
 }
 
 .team-item {
-  margin-right: 30px;
   margin-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
+    margin-right: 30px;
     width: calc((100% - 60px) / 2);
   }
 
@@ -44,8 +44,26 @@
   border-radius: 4px;
 }
 
+.team-item:nth-child(2n) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 0;
+  }
+}
+
+.team-item:nth-child(3n) {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
 .team-item:nth-child(4n) {
-  margin-right: 0;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 0;
+  }
 }
 
 .team-tittle,
