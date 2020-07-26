@@ -30,6 +30,14 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+
+  // @media screen and (max-width: 1199px) {
+  //   align-items: center;
+  //   justify-content: center;
+  // }
 }
 
 .clients-item {
@@ -57,7 +65,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
   .clients-item:nth-child(3n) {
     margin-right: 0;
   }
