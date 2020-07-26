@@ -29,7 +29,8 @@
   margin-top: 0;
   margin-bottom: 46px;
 
-  width: 646px;
+  width: 360px;
+  // width: auto;
   margin-left: auto;
   margin-right: auto;
 
@@ -38,11 +39,16 @@
   // line-height: 1.36;
   // letter-spacing: 0.06em;
 
-  @include font-param(900, 44px, 1.36, 0.06em);
+  @include font-param(900, 26px, 1.62, 0.06em);
 
   text-transform: uppercase;
 
   color: $primary-white-color;
+
+  @media screen and (min-width: $desktop) {
+    width: 696px;
+    @include font-param(900, 44px, 1.36, 0.06em);
+  }
 }
 
 .button.primary {
