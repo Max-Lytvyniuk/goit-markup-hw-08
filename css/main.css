@@ -363,6 +363,7 @@ body {
 }
 
 .menu-container {
+  z-index: 1;
   background-color: #ffffff;
 }
 

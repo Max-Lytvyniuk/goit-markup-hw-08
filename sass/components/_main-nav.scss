@@ -232,6 +232,8 @@
 .menu-container {
   // display: none;
 
+  z-index: 1;
+
   background-color: $primary-white-color;
 
   @media screen and (max-width: 767px) {
