@@ -17,44 +17,56 @@
 
   <body>
     <header>
-      <div class="container main-nav portfolio-margin">
+      <div class="main-nav container portfolio-margin">
         <nav class="site-nav">
-          <a href="./" class="logo">
-            <span class="logo-blue">Web</span> Studio
-          </a>
-          <ul class="site-nav list">
+          <div class="logo-nav">
+            <a href="./" class="logo">
+              <span class="logo-blue">Web</span> Studio
+            </a>
+          </div>
+    
+          <button type="button" class="menu-button" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню" aria-expanded="false"
+              aria-controls="menu-container" data-menu-button>
+              <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+              <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="site-nav-list list">
             <li class="item">
-              <a href="./index.html" class="link">Студия </a>
+              <a href="" class="link current">Студия </a>
             </li>
             <li class="item">
-              <a href="" class="link current">Портфолио </a>
+              <a href="./portfolio.html" class="link">Портфолио </a>
             </li>
             <li class="item">
               <a href="" class="link">Контакты </a>
             </li>
           </ul>
-        </nav>
-
-        <address class="auth-nav">
-          <ul class="auth-nav list">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link icon-nav">
-                <svg class="icon-envelope">
-                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="link icon-nav">
-                <svg class="icon-smartpone">
-                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
+    
+          <address class="auth-nav">
+            <ul class="auth-nav list">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link icon-nav">
+                  <svg class="icon-envelope">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="link icon-nav">
+                  <svg class="icon-smartpone">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
@@ -236,105 +248,90 @@
     </main>
 
     <footer>
-      <div class="container footer">
-        <div class="footer-flex">
-          <a href="./" class="logo-white">
-            <span class="logo-blue">Web</span>Studio
-          </a>
-
-          <address class="footer-flex">
-            <ul class="footer-flex list">
-              <li class="footer-flex-item">
-                <p class="address-str">
-                  г.Киев, пр-т Леси Украинки, 26
-                </p>
+      <div class="footer container">
+        <div class="tablet-container">
+          <div class="logo-add">
+            <div class="logo-footer">
+              <a href="./" class="logo-white">
+                <span class="logo-blue">Web</span> Studio
+              </a>
+            </div>
+    
+            <address class="footer-address">
+              <ul class="footer-flex list">
+                <li class="footer-flex-item">
+                  <p class="address-str">
+                    г.Киев, пр-т Леси Украинки, 26
+                  </p>
+                </li>
+                <li class="footer-flex-item">
+                  <a href="mailto:info@devstudio.com" class="address-contact">info@devstudio.com</a>
+                </li>
+                <li class="footer-flex-item">
+                  <a href="tel:+380961111111" class="address-contact">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+    
+          <div class="invite-flex">
+            <b class="invite">присоединяйтесь</b>
+            <ul class="invite-list list">
+              <li class="invite-item">
+                <a href="" aria-label="Ссылка на инстаграм" class="link invite-border">
+                  <svg class="invite-icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-flex-item">
-                <a href="mailto:info@devstudio.com" class="address-contact"
-                  >info@devstudio.com</a
-                >
+              <li class="invite-item">
+                <a href="" aria-label="Ссылка на твиттер" class="link invite-border">
+                  <svg class="invite-icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-flex-item">
-                <a href="tel:+380961111111" class="address-contact"
-                  >+38 096 111 11 11</a
-                >
+              <li class="invite-item">
+                <a href="" aria-label="Ссылка на фейсбук" class="link invite-border">
+                  <svg class="invite-icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="invite-item">
+                <a href="" aria-label="Ссылка на линкедин" class="link invite-border">
+                  <svg class="invite-icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-
-        <div class="invite-flex">
-          <b class="invite invite-flex">присоединяйтесь</b>
-          <ul class="invite-list list">
-            <li class="invite-item">
-              <a
-                href=""
-                aria-label="Ссылка на инстаграм"
-                class="link invite-border"
-              >
-                <svg class="invite-icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="invite-item">
-              <a
-                href=""
-                aria-label="Ссылка на твиттер"
-                class="link invite-border"
-              >
-                <svg class="invite-icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="invite-item">
-              <a
-                href=""
-                aria-label="Ссылка на фейсбук"
-                class="link invite-border"
-              >
-                <svg class="invite-icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="invite-item">
-              <a
-                href=""
-                aria-label="Ссылка на линкедин"
-                class="link invite-border"
-              >
-                <svg class="invite-icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
+    
         <div class="subscribe-container">
           <b class="subscribe">подпишитесь на рассылку</b>
-        
-          <div class="subscribe-flex">
+    
+          <form class="subscribe-flex">
             <label for="mail" class="subscribe-field">
               <input type="mail" class="form-subscribe" name="mail" id="mail" placeholder="E-mail " />
             </label>
-        
+    
             <button type="submit" class="subscribe-button">
               <span class="subscribe-text">Подписаться</span>
               <svg class="subscribe-icon">
                 <use href="./images/symbol-defs.svg#icon-send-footer"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
-
       </div>
-
+    
       <!-- <div class="container copyright-list">
-        <p class="copyright">2020 &#124; Developed by GoIT Students</p>
-      </div> -->
+            <p class="copyright">2020 &#124; Developed by GoIT Students</p>
+          </div> -->
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
