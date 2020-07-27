@@ -17,58 +17,59 @@
 
   <body>
     <header>
-      <div class="main-nav container portfolio-margin">
-        <nav class="site-nav">
-          <div class="logo-nav">
-            <a href="./" class="logo">
-              <span class="logo-blue">Web</span> Studio
-            </a>
-          </div>
-    
-          <button type="button" class="menu-button" data-menu-button>
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню" aria-expanded="false"
-              aria-controls="menu-container" data-menu-button>
-              <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
-              <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
-            </svg>
-          </button>
-        </nav>
-        <div class="menu-container" id="menu-container" data-menu>
-          <ul class="site-nav-list list">
-            <li class="item">
-              <a href="./index.html" class="link">Студия </a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфолио </a>
-            </li>
-            <li class="item">
-              <a href="" class="link">Контакты </a>
-            </li>
-          </ul>
-    
-          <address class="auth-nav">
-            <ul class="auth-nav list">
+      <header>
+        <div class="main-nav container portfolio-margin">
+          <nav class="site-nav">
+            <div class="logo-nav">
+              <a href="./" class="logo">
+                <span class="logo-blue">Web</span> Studio
+              </a>
+            </div>
+      
+            <button type="button" class="menu-button" data-menu-button>
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню" aria-expanded="false"
+                aria-controls="menu-container" data-menu-button>
+                <use class="icon-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+                <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </nav>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav-list list">
               <li class="item">
-                <a href="mailto:info@devstudio.com" class="link icon-nav">
-                  <svg class="icon-envelope">
-                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
+                <a href="./index.html" class="link">Студия </a>
               </li>
               <li class="item">
-                <a href="tel:+380961111111" class="link icon-nav">
-                  <svg class="icon-smartpone">
-                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
+                <a href="./portfolio.html" class="link current">Портфолио </a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Контакты </a>
               </li>
             </ul>
-          </address>
+      
+            <address class="auth-nav">
+              <ul class="auth-nav list">
+                <li class="item">
+                  <a href="mailto:info@devstudio.com" class="link icon-nav">
+                    <svg class="icon-envelope">
+                      <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="tel:+380961111111" class="link icon-nav">
+                    <svg class="icon-smartpone">
+                      <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
     <main>
       <section>
@@ -87,12 +88,30 @@
           <ul class="work-list list">
             <li class="work-item">
               <div class="work-thumb">
-              <a href=""><img
-                    src="./images/portfolio/tech.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+              <a href="">
+                    <picture>
+                      <source srcset="./images/portfolio/tech-450.jpg 450w, ./images/portfolio/tech-900.jpg 900w" media="(min-width: 1200px)"/>
+
+                      <source srcset="./images/portfolio/tech-354.jpg 354w, ./images/portfolio/tech-708.jpg 708w" media="(min-width: 768px)"/>
+
+                      <source srcset="./images/portfolio/tech-450.jpg 450w, ./images/portfolio/tech-900.jpg 900w"
+                        media="(max-width: 767px)" />
+                  
+                      <source srcset="./images/portfolio/tech-450.webp 450w, ./images/portfolio/tech-900.webp 900w"
+                        media="(min-width: 1200px)"
+                        type="image/webp" />
+                      
+                      <source srcset="./images/portfolio/tech-354.webp 354w, ./images/portfolio/tech-708.webp 708w"
+                        media="(min-width: 768px)"
+                        type="image/webp" />
+                      
+                      <source srcset="./images/portfolio/tech-450.webp 450w, ./images/portfolio/tech-900.webp 900w"
+                        media="(max-width: 767px)"
+                        type="image/webp" />
+                        
+
+                      <img src="./images/portfolio/tech-450.jpg" alt="Технокряк">
+                    </picture>
                   <div class="work-overlay">
                     <p class="tech-crack">
                       Технокряк это современная площадка распространения
@@ -109,7 +128,29 @@
             </li>
             <li class="work-item">
               <div class="work-thumb">
-                <a href=""><img src="./images/portfolio/nogs.jpg" alt="Постер" width="370" height="294" />
+                <a href="">
+                  <picture>
+                    <source srcset="./images/portfolio/nogs-450.jpg 450w, ./images/portfolio/nogs-900.jpg 900w"
+                      media="(min-width: 1200px)" />
+                  
+                    <source srcset="./images/portfolio/nogs-354.jpg 354w, ./images/portfolio/nogs-708.jpg 708w"
+                      media="(min-width: 768px)" />
+                  
+                    <source srcset="./images/portfolio/nogs-450.jpg 450w, ./images/portfolio/nogs-900.jpg 900w"
+                      media="(max-width: 767px)" />
+                  
+                    <source srcset="./images/portfolio/nogs-450.webp 450w, ./images/portfolio/nogs-900.webp 900w"
+                      media="(min-width: 1200px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/nogs-354.webp 354w, ./images/portfolio/nogs-708.webp 708w"
+                      media="(min-width: 768px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/nogs-450.webp 450w, ./images/portfolio/nogs-900.webp 900w"
+                      media="(max-width: 767px)" type="image/webp" />
+                  
+                  
+                    <img src="./images/portfolio/nogs-450.jpg" alt="Постер">
+                  </picture>
                   <div class="work-overlay">
                     <p class="tech-crack">
                       Технокряк это современная площадка распространения
@@ -125,7 +166,29 @@
             </li>
             <li class="work-item">
               <div class="work-thumb">
-                <a href=""><img src="./images/portfolio/seafood.jpg" alt="Логотип ресторана" width="370" height="294" />
+                <a href="">
+                  <picture>
+                    <source srcset="./images/portfolio/seafood-450.jpg 450w, ./images/portfolio/seafood-900.jpg 900w"
+                      media="(min-width: 1200px)" />
+                  
+                    <source srcset="./images/portfolio/seafood-354.jpg 354w, ./images/portfolio/seafood-708.jpg 708w"
+                      media="(min-width: 768px)" />
+                  
+                    <source srcset="./images/portfolio/seafood-450.jpg 450w, ./images/portfolio/seafood-900.jpg 900w"
+                      media="(max-width: 767px)" />
+                  
+                    <source srcset="./images/portfolio/seafood-450.webp 450w, ./images/portfolio/seafood-900.webp 900w"
+                      media="(min-width: 1200px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/seafood-354.webp 354w, ./images/portfolio/seafood-708.webp 708w"
+                      media="(min-width: 768px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/seafood-450.webp 450w, ./images/portfolio/seafood-900.webp 900w"
+                      media="(max-width: 767px)" type="image/webp" />
+                  
+                  
+                    <img src="./images/portfolio/seafood-450.jpg" alt="Логотип ресторана">
+                  </picture>
                   <div class="work-overlay">
                     <p class="tech-crack">
                       Технокряк это современная площадка распространения
@@ -142,7 +205,29 @@
             </li>
             <li class="work-item">
               <div class="work-thumb">
-                <a href=""><img src="./images/portfolio/headphones.jpg" alt="Наушники" width="370" height="294" />
+                <a href="">
+                  <picture>
+                    <source srcset="./images/portfolio/headphones-450.jpg 450w, ./images/portfolio/headphones-900.jpg 900w"
+                      media="(min-width: 1200px)" />
+                  
+                    <source srcset="./images/portfolio/headphones-354.jpg 354w, ./images/portfolio/headphones-708.jpg 708w"
+                      media="(min-width: 768px)" />
+                  
+                    <source srcset="./images/portfolio/headphones-450.jpg 450w, ./images/portfolio/headphones-900.jpg 900w"
+                      media="(max-width: 767px)" />
+                  
+                    <source srcset="./images/portfolio/headphones-450.webp 450w, ./images/portfolio/headphones-900.webp 900w"
+                      media="(min-width: 1200px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/headphones-354.webp 354w, ./images/portfolio/headphones-708.webp 708w"
+                      media="(min-width: 768px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/headphones-450.webp 450w, ./images/portfolio/headphones-900.webp 900w"
+                      media="(max-width: 767px)" type="image/webp" />
+                  
+                  
+                    <img src="./images/portfolio/headphones-450.jpg" alt="Наушники">
+                  </picture>
                   <div class="work-overlay">
                     <p class="tech-crack">
                       Технокряк это современная площадка распространения
@@ -159,7 +244,29 @@
             </li>
             <li class="work-item">
               <div class="work-thumb">
-                <a href=""><img src="./images/portfolio/boxes.jpg" alt="Коробки" width="370" height="294" />
+                <a href="">
+                  <picture>
+                    <source srcset="./images/portfolio/boxes-450.jpg 450w, ./images/portfolio/boxes-900.jpg 900w"
+                      media="(min-width: 1200px)" />
+                  
+                    <source srcset="./images/portfolio/boxes-354.jpg 354w, ./images/portfolio/boxes-708.jpg 708w"
+                      media="(min-width: 768px)" />
+                  
+                    <source srcset="./images/portfolio/boxes-450.jpg 450w, ./images/portfolio/boxes-900.jpg 900w"
+                      media="(max-width: 767px)" />
+                  
+                    <source srcset="./images/portfolio/boxes-450.webp 450w, ./images/portfolio/boxes-900.webp 900w"
+                      media="(min-width: 1200px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/boxes-354.webp 354w, ./images/portfolio/boxes-708.webp 708w"
+                      media="(min-width: 768px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/boxes-450.webp 450w, ./images/portfolio/boxes-900.webp 900w"
+                      media="(max-width: 767px)" type="image/webp" />
+                  
+                  
+                    <img src="./images/portfolio/boxes-450.jpg" alt="Коробки">
+                  </picture>
                   <div class="work-overlay">
                     <p class="tech-crack">
                       Технокряк это современная площадка распространения
@@ -176,7 +283,29 @@
             </li>
             <li class="work-item">
               <div class="work-thumb">
-                <a href=""><img src="./images/portfolio/inspiration.jpg" alt="Интерфейс" width="370" height="294" />
+                <a href="">
+                  <picture>
+                    <source srcset="./images/portfolio/inspiration-450.jpg 450w, ./images/portfolio/inspiration-900.jpg 900w"
+                      media="(min-width: 1200px)" />
+                  
+                    <source srcset="./images/portfolio/inspiration-354.jpg 354w, ./images/portfolio/inspiration-708.jpg 708w"
+                      media="(min-width: 768px)" />
+                  
+                    <source srcset="./images/portfolio/inspiration-450.jpg 450w, ./images/portfolio/inspiration-900.jpg 900w"
+                      media="(max-width: 767px)" />
+                  
+                    <source srcset="./images/portfolio/inspiration-450.webp 450w, ./images/portfolio/inspiration-900.webp 900w"
+                      media="(min-width: 1200px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/inspiration-354.webp 354w, ./images/portfolio/inspiration-708.webp 708w"
+                      media="(min-width: 768px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/inspiration-450.webp 450w, ./images/portfolio/inspiration-900.webp 900w"
+                      media="(max-width: 767px)" type="image/webp" />
+                  
+                  
+                    <img src="./images/portfolio/inspiration-450.jpg" alt="Интерфейс">
+                  </picture>
                   <div class="work-overlay">
                     <p class="tech-crack">
                       Технокряк это современная площадка распространения
@@ -193,7 +322,29 @@
             </li>
             <li class="work-item">
               <div class="work-thumb">
-                <a href=""><img src="./images/portfolio/limitededit.jpg" alt="Книга" width="370" height="294" />
+                <a href="">
+                  <picture>
+                    <source srcset="./images/portfolio/limedit-450.jpg 450w, ./images/portfolio/limedit-900.jpg 900w"
+                      media="(min-width: 1200px)" />
+                  
+                    <source srcset="./images/portfolio/limedit-354.jpg 354w, ./images/portfolio/limedit-708.jpg 708w"
+                      media="(min-width: 768px)" />
+                  
+                    <source srcset="./images/portfolio/limedit-450.jpg 450w, ./images/portfolio/limedit-900.jpg 900w"
+                      media="(max-width: 767px)" />
+                  
+                    <source srcset="./images/portfolio/limedit-450.webp 450w, ./images/portfolio/limedit-900.webp 900w"
+                      media="(min-width: 1200px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/limedit-354.webp 354w, ./images/portfolio/limedit-708.webp 708w"
+                      media="(min-width: 768px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/limedit-450.webp 450w, ./images/portfolio/limedit-900.webp 900w"
+                      media="(max-width: 767px)" type="image/webp" />
+                  
+                  
+                    <img src="./images/portfolio/limedit-450.jpg" alt="Книга">
+                  </picture>
                   <div class="work-overlay">
                     <p class="tech-crack">
                       Технокряк это современная площадка распространения
@@ -210,7 +361,29 @@
             </li>
             <li class="work-item">
               <div class="work-thumb">
-                <a href=""><img src="./images/portfolio/lab.jpg" alt="Бирка" width="370" height="294" />
+                <a href="">
+                  <picture>
+                    <source srcset="./images/portfolio/lab-450.jpg 450w, ./images/portfolio/lab-900.jpg 900w"
+                      media="(min-width: 1200px)" />
+                  
+                    <source srcset="./images/portfolio/lab-354.jpg 354w, ./images/portfolio/lab-708.jpg 708w"
+                      media="(min-width: 768px)" />
+                  
+                    <source srcset="./images/portfolio/lab-450.jpg 450w, ./images/portfolio/lab-900.jpg 900w"
+                      media="(max-width: 767px)" />
+                  
+                    <source srcset="./images/portfolio/lab-450.webp 450w, ./images/portfolio/lab-900.webp 900w"
+                      media="(min-width: 1200px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/lab-354.webp 354w, ./images/portfolio/lab-708.webp 708w"
+                      media="(min-width: 768px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/lab-450.webp 450w, ./images/portfolio/lab-900.webp 900w"
+                      media="(max-width: 767px)" type="image/webp" />
+                  
+                  
+                    <img src="./images/portfolio/lab-450.jpg" alt="Бирка">
+                  </picture>
                   <div class="work-overlay">
                     <p class="tech-crack">
                       Технокряк это современная площадка распространения
@@ -227,7 +400,29 @@
             </li>
             <li class="work-item">
               <div class="work-thumb">
-                <a href=""><img src="./images/portfolio/growing.jpg" alt="Ноутбук" width="370" height="294" />
+                <a href="">
+                  <picture>
+                    <source srcset="./images/portfolio/growing-450.jpg 450w, ./images/portfolio/growing-900.jpg 900w"
+                      media="(min-width: 1200px)" />
+                  
+                    <source srcset="./images/portfolio/growing-354.jpg 354w, ./images/portfolio/growing-708.jpg 708w"
+                      media="(min-width: 768px)" />
+                  
+                    <source srcset="./images/portfolio/growing-450.jpg 450w, ./images/portfolio/growing-900.jpg 900w"
+                      media="(max-width: 767px)" />
+                  
+                    <source srcset="./images/portfolio/growing-450.webp 450w, ./images/portfolio/growing-900.webp 900w"
+                      media="(min-width: 1200px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/growing-354.webp 354w, ./images/portfolio/growing-708.webp 708w"
+                      media="(min-width: 768px)" type="image/webp" />
+                  
+                    <source srcset="./images/portfolio/growing-450.webp 450w, ./images/portfolio/growing-900.webp 900w"
+                      media="(max-width: 767px)" type="image/webp" />
+                  
+                  
+                    <img src="./images/portfolio/growing-450.jpg" alt="Ноутбук">
+                  </picture>
                   <div class="work-overlay">
                     <p class="tech-crack">
                       Технокряк это современная площадка распространения
@@ -248,90 +443,105 @@
     </main>
 
     <footer>
-      <div class="footer container">
-        <div class="tablet-container">
-          <div class="logo-add">
-            <div class="logo-footer">
-              <a href="./" class="logo-white">
-                <span class="logo-blue">Web</span> Studio
-              </a>
-            </div>
-    
-            <address class="footer-address">
-              <ul class="footer-flex list">
-                <li class="footer-flex-item">
-                  <p class="address-str">
-                    г.Киев, пр-т Леси Украинки, 26
-                  </p>
-                </li>
-                <li class="footer-flex-item">
-                  <a href="mailto:info@devstudio.com" class="address-contact">info@devstudio.com</a>
-                </li>
-                <li class="footer-flex-item">
-                  <a href="tel:+380961111111" class="address-contact">+38 096 111 11 11</a>
-                </li>
-              </ul>
-            </address>
-          </div>
-    
-          <div class="invite-flex">
-            <b class="invite">присоединяйтесь</b>
-            <ul class="invite-list list">
-              <li class="invite-item">
-                <a href="" aria-label="Ссылка на инстаграм" class="link invite-border">
-                  <svg class="invite-icon">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
+      <div class="container footer">
+        <div class="footer-flex">
+          <a href="./" class="logo-white">
+            <span class="logo-blue">Web</span>Studio
+          </a>
+
+          <address class="footer-flex">
+            <ul class="footer-flex list">
+              <li class="footer-flex-item">
+                <p class="address-str">
+                  г.Киев, пр-т Леси Украинки, 26
+                </p>
               </li>
-              <li class="invite-item">
-                <a href="" aria-label="Ссылка на твиттер" class="link invite-border">
-                  <svg class="invite-icon">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
+              <li class="footer-flex-item">
+                <a href="mailto:info@devstudio.com" class="address-contact"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="invite-item">
-                <a href="" aria-label="Ссылка на фейсбук" class="link invite-border">
-                  <svg class="invite-icon">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="invite-item">
-                <a href="" aria-label="Ссылка на линкедин" class="link invite-border">
-                  <svg class="invite-icon">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
+              <li class="footer-flex-item">
+                <a href="tel:+380961111111" class="address-contact"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
-          </div>
+          </address>
         </div>
-    
+
+        <div class="invite-flex">
+          <b class="invite invite-flex">присоединяйтесь</b>
+          <ul class="invite-list list">
+            <li class="invite-item">
+              <a
+                href=""
+                aria-label="Ссылка на инстаграм"
+                class="link invite-border"
+              >
+                <svg class="invite-icon">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="invite-item">
+              <a
+                href=""
+                aria-label="Ссылка на твиттер"
+                class="link invite-border"
+              >
+                <svg class="invite-icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="invite-item">
+              <a
+                href=""
+                aria-label="Ссылка на фейсбук"
+                class="link invite-border"
+              >
+                <svg class="invite-icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="invite-item">
+              <a
+                href=""
+                aria-label="Ссылка на линкедин"
+                class="link invite-border"
+              >
+                <svg class="invite-icon">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <div class="subscribe-container">
           <b class="subscribe">подпишитесь на рассылку</b>
-    
-          <form class="subscribe-flex">
+        
+          <div class="subscribe-flex">
             <label for="mail" class="subscribe-field">
               <input type="mail" class="form-subscribe" name="mail" id="mail" placeholder="E-mail " />
             </label>
-    
+        
             <button type="submit" class="subscribe-button">
               <span class="subscribe-text">Подписаться</span>
               <svg class="subscribe-icon">
                 <use href="./images/symbol-defs.svg#icon-send-footer"></use>
               </svg>
             </button>
-          </form>
+          </div>
         </div>
-      </div>
-    
-      <!-- <div class="container copyright-list">
-            <p class="copyright">2020 &#124; Developed by GoIT Students</p>
-          </div> -->
-    </footer>
 
-    <script src="./js/menu.js"></script>
+      </div>
+
+      <!-- <div class="container copyright-list">
+        <p class="copyright">2020 &#124; Developed by GoIT Students</p>
+      </div> -->
+    </footer>
   </body>
 </html>
