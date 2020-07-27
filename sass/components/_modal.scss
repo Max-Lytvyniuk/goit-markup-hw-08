@@ -99,6 +99,10 @@
   }
 
   @media screen and (max-width: 1199px) {
+    display: block;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 370px;
   }
 
