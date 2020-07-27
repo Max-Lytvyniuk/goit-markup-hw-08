@@ -92,7 +92,7 @@
     width: 100%;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $tablet) {
     width: 370px;
   }
 }
