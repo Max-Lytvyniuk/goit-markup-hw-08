@@ -82,8 +82,6 @@
 }
 
 .form {
-  width: 448px;
-
   @media screen and (max-width: 450px) {
     display: block;
     // flex-direction: column;
@@ -92,8 +90,12 @@
     width: 100%;
   }
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 1199px) {
     width: 370px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 448px;
   }
 }
 

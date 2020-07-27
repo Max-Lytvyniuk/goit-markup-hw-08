@@ -1023,10 +1023,6 @@ body {
   color: #212121;
 }
 
-.form {
-  width: 448px;
-}
-
 @media screen and (max-width: 450px) {
   .form {
     display: block;
@@ -1040,9 +1036,15 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .form {
     width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 448px;
   }
 }
 
