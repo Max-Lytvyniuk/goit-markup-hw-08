@@ -162,7 +162,8 @@
 
 .checkbox-field {
   display: flex;
-  align-items: center;
+  // align-items: center;
+  justify-content: center;
 
   margin-bottom: 30px;
 }
@@ -184,7 +185,7 @@
   height: 15px;
 
   margin-right: 7px;
-  margin-left: 12px;
+  // margin-left: 12px;
 
   border: 2px solid $tittle-text-color;
   border-radius: 4px;
@@ -199,11 +200,16 @@
 }
 
 .checkbox-label {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   color: $primary-text-color;
+
+  @media screen and (min-width: desktop) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .checkbox-link {
