@@ -57,11 +57,11 @@
     width: 100%;
   }
 
-  @media screen and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  @media screen and (min-width: 451px) and (max-width: 1199px) {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     width: 450px;
   }
 
